@@ -1,0 +1,13 @@
+name: example
+description: A sample command-line application.
+version: 1.0.0
+
+environment:
+  sdk: ^3.6.0
+
+dev_dependencies:
+  custom_lint:
+  do_not_use_var:
+    path: ../
+dependencies:
+  quiver: ^3.2.2
