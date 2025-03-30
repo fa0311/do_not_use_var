@@ -105,7 +105,7 @@ class DoNotUseVarForLoopFix extends DartFix {
 
         builder.addSimpleReplacement(
           SourceRange(node.offset, node.length),
-          'for (final ${node.variables.variables.first.name.toString()} in $iterableExpression)',
+          'final ${node.variables.variables.first.name.toString()} in $iterableExpression',
         );
       });
     });
